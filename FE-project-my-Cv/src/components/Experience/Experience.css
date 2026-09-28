@@ -1,0 +1,40 @@
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-item {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1.25rem;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.experience-role {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.experience-company {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.experience-period {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.experience-desc {
+  margin-top: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
