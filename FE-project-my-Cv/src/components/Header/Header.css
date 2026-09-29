@@ -1,44 +1,45 @@
+/* Leaf Mark sidebar header — no banner, sits inside .cv-sidebar */
 .header {
-  background-color: var(--color-primary);
-  color: #ffffff;
-  padding: 2.5rem 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .header-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0;
 }
 
-.header-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  font-weight: 700;
+.header-leaf {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.5rem;
   flex-shrink: 0;
 }
 
+.header-avatar { display: none; }
+
 .header-name {
-  font-size: 2rem;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 1.2;
+  color: var(--color-text);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
 }
 
 .header-title {
-  font-size: 1.125rem;
-  opacity: 0.9;
-  margin-top: 0.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  color: var(--teal);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+  max-width: 18ch;
 }
 
 .header-location {
-  font-size: 0.9rem;
-  opacity: 0.75;
-  margin-top: 0.25rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--grey);
 }

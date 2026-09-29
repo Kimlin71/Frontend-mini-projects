@@ -1,29 +1,29 @@
 .skills-groups {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.9rem;
 }
 
 .skills-category {
-  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-text-muted);
-  margin-bottom: 0.5rem;
+  color: var(--grey);
+  margin-bottom: 0.35rem;
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.3rem;
 }
 
 .skills-tag {
-  background-color: #e0eaff;
-  color: var(--color-primary-dark);
-  padding: 0.3rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  background: #edfaf9;
+  color: var(--teal);
+  border: 1px solid #b3e5e3;
+  border-radius: 2px;
+  padding: 0.12rem 0.45rem;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
 }

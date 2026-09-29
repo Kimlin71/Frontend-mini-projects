@@ -5,26 +5,34 @@
 }
 
 :root {
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-text: #1e293b;
-  --color-text-muted: #64748b;
-  --color-bg: #f8fafc;
+  /* WeLearnIT brand palette */
+  --teal: #3ba2a4;
+  --teal-light: #7eccc7;
+  --grey: #898989;
+
+  /* Semantic aliases */
+  --color-primary: var(--teal);
+  --color-primary-dark: #2d8587;
+  --color-text: #1a1a1a;
+  --color-text-muted: var(--grey);
+  --color-bg: #f8faf8;
   --color-surface: #ffffff;
-  --color-border: #e2e8f0;
-  --font-sans: 'Segoe UI', system-ui, sans-serif;
-  --max-width: 860px;
+  --color-border: var(--teal-light);
+
+  /* WeLearnIT typography */
+  --font-heading: 'Century Gothic', Futura, 'Trebuchet MS', sans-serif;
+  --font-body: 'Times New Roman', Georgia, serif;
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--teal);
   text-decoration: none;
 }
 

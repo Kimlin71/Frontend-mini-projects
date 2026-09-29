@@ -1,40 +1,47 @@
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
-.experience-item {
-  border-left: 3px solid var(--color-primary);
-  padding-left: 1.25rem;
-}
+.experience-item {}
 
 .experience-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
 .experience-role {
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
 }
 
 .experience-company {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--grey);
+  margin-top: 0.1rem;
 }
 
 .experience-period {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  color: var(--teal-light);
+  font-weight: 700;
   white-space: nowrap;
+  padding-top: 0.1rem;
 }
 
 .experience-desc {
-  margin-top: 0.5rem;
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  color: #2d2d2d;
+  line-height: 1.75;
+  max-width: 68ch;
 }
