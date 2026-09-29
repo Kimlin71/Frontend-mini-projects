@@ -3,10 +3,388 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My CV</title>
+    <title>Kim Lindberg — CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="cv-layout">
+      <aside class="cv-sidebar">
+        <header class="header">
+          <div class="header-inner">
+            <!-- WeLearnIT lotus mark -->
+            <svg class="header-leaf" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 44 C10 44 4 30 4 18 C14 18 24 24 24 44Z" fill="#3ba2a4" opacity="0.85"/>
+              <path d="M24 44 C38 44 44 30 44 18 C34 18 24 24 24 44Z" fill="#7eccc7" opacity="0.7"/>
+              <path d="M24 44 C24 28 18 18 8 10 C16 10 24 18 24 44Z" fill="#3ba2a4" opacity="0.4"/>
+            </svg>
+            <h1 class="header-name">Kim<br />Lindberg</h1>
+            <p class="header-title">Applied AI &amp; Agentic Systems Consultant</p>
+            <p class="header-location">Landskrona, Sweden</p>
+          </div>
+        </header>
+
+        <section class="contact" id="contact">
+          <h2 class="section-title">Contact</h2>
+          <ul class="contact-list">
+            <li><span class="contact-label">Email</span><a href="mailto:kim@eqit.ai">kim@eqit.ai</a></li>
+            <li><span class="contact-label">Phone</span><a href="tel:+46705678099">+46 70 567 80 99</a></li>
+            <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/kim-lindberg-eq4success" target="_blank" rel="noreferrer">My LinkedIn</a></li>
+            <li><span class="contact-label">Location</span><span>Landskrona, Sweden</span></li>
+          </ul>
+        </section>
+
+        <section class="skills" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-groups">
+            <div class="skills-group">
+              <h3 class="skills-category">Languages &amp; Markup</h3>
+              <ul class="skills-list">
+                <li class="skills-tag">HTML</li>
+                <li class="skills-tag">CSS</li>
+                <li class="skills-tag">JavaScript</li>
+                <li class="skills-tag">TypeScript</li>
+                <li class="skills-tag">C#</li>
+                <li class="skills-tag">YAML</li>
+              </ul>
+            </div>
+            <div class="skills-group">
+              <h3 class="skills-category">Frameworks &amp; Runtimes</h3>
+              <ul class="skills-list">
+                <li class="skills-tag">React</li>
+                <li class="skills-tag">Node.js</li>
+              </ul>
+            </div>
+            <div class="skills-group">
+              <h3 class="skills-category">AI &amp; Agentic</h3>
+              <ul class="skills-list">
+                <li class="skills-tag">Applied AI</li>
+                <li class="skills-tag">Agentic AI Development</li>
+              </ul>
+            </div>
+            <div class="skills-group">
+              <h3 class="skills-category">Tools</h3>
+              <ul class="skills-list">
+                <li class="skills-tag">Git</li>
+                <li class="skills-tag">Figma</li>
+                <li class="skills-tag">VS Code</li>
+                <li class="skills-tag">Jira</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="cv-main">
+        <section class="about" id="about">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I combine 20+ years of experience leading large-scale transformation
+            initiatives, technical delivery, and executive stakeholder engagement
+            with hands-on work in Applied AI, Agentic Systems, and software
+            development. I design and build AI-powered solutions, multi-agent
+            systems, and orchestration frameworks that help organizations move from
+            experimentation to measurable business value. My background in
+            organizational psychology, coaching, and leadership development gives
+            me a unique perspective on how human behavior influences technology
+            adoption and business results.
+          </p>
+          <p class="about-text">
+            I am currently completing a 9-month AI developer training
+            programme, deepening my practical skills in C#, Python, HTML, CSS, TypeScript, Azure AI and
+            React as part of my Applied AI &amp; Agentic Systems work.
+          </p>
+        </section>
+
+        <section class="experience" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <div class="experience-list">
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Founder | Applied AI &amp; Systems Architect</h3>
+                  <p class="experience-company">Emvex Inc.</p>
+                </div>
+                <span class="experience-period">2024 – Present</span>
+              </div>
+              <p class="experience-desc">
+                Building an AI-powered healthcare platform combining biosensor data, agentic systems, and real-time decision support. Authored a US provisional patent covering the architecture and AI-assisted intervention model. Established research collaboration with Lund University and secured investor engagement.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Founder | Applied AI Consultant</h3>
+                  <p class="experience-company">EQIT Innovations Sweden AB</p>
+                </div>
+                <span class="experience-period">2024 – Present</span>
+              </div>
+              <p class="experience-desc">
+                Helping organizations bridge the gap between emerging AI capabilities, business outcomes, and successful adoption. Advise leaders on AI strategy, design workshops, and deliver keynote presentations combining technology, behavioral science, and systems thinking.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Release Train Engineer | Delivery &amp; Platform Transformation</h3>
+                  <p class="experience-company">Handelsbanken</p>
+                </div>
+                <span class="experience-period">2022 – 2026</span>
+              </div>
+              <p class="experience-desc">
+                Led coordinated delivery for a business-critical banking platform. Co-led delivery across 15 teams and approximately 185 professionals. Owned planning, dependency management, risk, budgets, quality gates, and stakeholder alignment while supporting DevSecOps and CI/CD practices.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Executive Coach</h3>
+                  <p class="experience-company">BetterUp</p>
+                </div>
+                <span class="experience-period">2024 – 2026</span>
+              </div>
+              <p class="experience-desc">
+                Coached senior leaders on leadership effectiveness, strategic thinking, and organizational impact in high-growth and complex environments. Applied evidence-based approaches focused on sustainable performance and development.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Transformation Consultant</h3>
+                  <p class="experience-company">Tetra Pak</p>
+                </div>
+                <span class="experience-period">2023 – 2024</span>
+              </div>
+              <p class="experience-desc">
+                Improved delivery structures and decision-making within a complex cyber-physical product environment. Introduced Power BI-based progress metrics, redesigned planning practices, and facilitated collaboration among leadership, product, engineering, and operational stakeholders.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Founder | Leadership &amp; Organizational Effectiveness</h3>
+                  <p class="experience-company">WeLearnIT</p>
+                </div>
+                <span class="experience-period">2016 – 2024</span>
+              </div>
+              <p class="experience-desc">
+                Supported organizations, leaders, and teams navigating change and building high-performance environments. Clients included IKEA, Tetra Pak, H&amp;M, Volvo Cars, King, and Hästens Beds. Delivered programs covering leadership development, resilience, psychological safety, and emotional intelligence.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Transformation Consultant | Leadership &amp; Organizational Development</h3>
+                  <p class="experience-company">H&amp;M Group</p>
+                </div>
+                <span class="experience-period">2021 – 2022</span>
+              </div>
+              <p class="experience-desc">
+                Built leadership, learning, and coaching capability supporting Business Tech at enterprise scale. Mentored leaders and practitioners across a 300+ team environment and created a Coach Hub that expanded access to professional coaching.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Director of IT &amp; Customer Solutions</h3>
+                  <p class="experience-company">inriver</p>
+                </div>
+                <span class="experience-period">2015 – 2016</span>
+              </div>
+              <p class="experience-desc">
+                Led customer-facing technical delivery, cloud operations, and service organizations supporting enterprise software implementations at global scale. Managed Microsoft Azure SaaS operations, training academy, certification, and customer success programs.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-role">Software &amp; Web Developer</h3>
+                  <p class="experience-company">Thorn Lighting</p>
+                </div>
+                <span class="experience-period">1999 – 2006</span>
+              </div>
+              <p class="experience-desc">
+                Developed Nordic web platforms, CMS solutions, and internal business applications using ASP, JavaScript, and SQL. Built the technical foundation of a career spanning web development, systems design, and digital product delivery.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <div class="education-list">
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Frontend Development Training Programme</h3>
+                  <p class="education-school">Applied AI &amp; Agentic Systems Curriculum</p>
+                </div>
+                <span class="education-period">2025 – Present</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Master's degree, Information Technology</h3>
+                  <p class="education-school">Malmö University</p>
+                </div>
+                <span class="education-period">1999</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Generative AI for Educators</h3>
+                  <p class="education-school">Vanderbilt University</p>
+                </div>
+                <span class="education-period">2023</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Advanced Leadership and Coaching</h3>
+                  <p class="education-school">Coachwalk Academy</p>
+                </div>
+                <span class="education-period">2019 – 2020</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-title">Certifications</h2>
+          <div class="education-list">
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Associated Certified Coach (ACC)</h3>
+                  <p class="education-school">International Coaching Federation</p>
+                </div>
+                <span class="education-period">2016</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">SPC 4, SAFe Program Consultant</h3>
+                  <p class="education-school">Scaled Agile, Inc.</p>
+                </div>
+                <span class="education-period">2018</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">PSM I, Professional Scrum Master</h3>
+                  <p class="education-school">Scrum.org</p>
+                </div>
+                <span class="education-period">2016</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">EQ-i 2.0 and EQ 360</h3>
+                  <p class="education-school">Multi-Health Systems Inc.</p>
+                </div>
+                <span class="education-period">2019</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">LAB Profile – Advanced Business Influence</h3>
+                  <p class="education-school">LAB Profile</p>
+                </div>
+                <span class="education-period">2018</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Facilitator Integration</h3>
+                  <p class="education-school">Six Seconds, The Emotional Intelligence Network</p>
+                </div>
+                <span class="education-period">2022</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Design Sprint Masterclass</h3>
+                  <p class="education-school">AJ&amp;Smart</p>
+                </div>
+                <span class="education-period">2022</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Prosci ADKAR</h3>
+                  <p class="education-school">Dataföreningen i Sverige</p>
+                </div>
+                <span class="education-period">2017</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Non Violent Communication</h3>
+                  <p class="education-school">Friare Liv AB</p>
+                </div>
+                <span class="education-period">2024</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Interview &amp; Interrogation</h3>
+                  <p class="education-school">Applied Behavior Research</p>
+                </div>
+                <span class="education-period">2024</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Licensed Management 3.0 Facilitator</h3>
+                  <p class="education-school">Management 3.0</p>
+                </div>
+                <span class="education-period">2016</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">NLP Practitioner</h3>
+                  <p class="education-school">NFNLP</p>
+                </div>
+                <span class="education-period">2012</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

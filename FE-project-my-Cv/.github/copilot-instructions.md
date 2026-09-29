@@ -1,11 +1,11 @@
 # FE-project-my-Cv
 
-React CV/resume project using plain CSS. No external CSS frameworks.
+Static CV/resume site built with plain HTML and CSS. No frameworks, no build step.
 
 ## Stack
-- React (Vite)
-- Plain CSS (component-scoped CSS files)
+- Plain HTML (`index.html`)
+- Plain CSS (`styles.css`)
 
 ## Structure
-- `src/components/` — one folder per CV section
-- `src/assets/` — images and static files
+- `index.html` — all CV sections (Header, About, Skills, Experience, Education, Contact)
+- `styles.css` — all styles, including CSS custom properties for colors/fonts
