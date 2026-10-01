@@ -21,7 +21,7 @@
 
   /* WeLearnIT typography */
   --font-heading: 'Century Gothic', Futura, 'Trebuchet MS', sans-serif;
-  --font-body: 'Times New Roman', Georgia, serif;
+  --font-body: 'Century Gothic', Futura, sans-serif;
 }
 
 body {
