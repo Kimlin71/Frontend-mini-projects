@@ -16,6 +16,17 @@ Open `index.html` in your browser. If you want to run it like a small local webs
 npx serve .
 ```
 
+## Deploy to GitHub Pages
+
+This project is ready to deploy as a static site on GitHub Pages.
+
+1. Push the repository to GitHub.
+2. In the GitHub repo, open `Settings` → `Pages`.
+3. Set the source to `GitHub Actions`.
+4. Push to `main` to trigger the deployment workflow in `.github/workflows/deploy.yml`.
+
+After the workflow finishes, GitHub will show the public Pages URL in the repository settings.
+
 ## How the code is organized
 
 - **Header** shows the name, job title, and location.
