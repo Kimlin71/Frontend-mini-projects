@@ -1,62 +1,49 @@
 # FE-project-my-Cv
 
-A personal CV/resume site for Kim Lindberg — Applied AI & Agentic Systems Consultant. Built with plain HTML and CSS, no build step or framework required.
+This is a simple personal CV website. It uses only HTML and CSS, so it is easy to open, read, and edit even if you are new to web development.
 
-## Preview
+## What this project is
 
-Open `index.html` in any modern browser to view the CV.
+- `index.html` contains the words and structure on the page.
+- `styles.css` controls how the page looks.
+- There is no framework, no JavaScript, and no build step.
 
-## Getting started
+## How to view it
+
+Open `index.html` in your browser. If you want to run it like a small local website, use a static server such as:
 
 ```bash
-# Clone the repo
-git clone <repo-url>
-cd FE-project-my-Cv
-
-# Open directly in the browser
-open index.html
-
-# …or serve with any static file server
 npx serve .
 ```
 
-## Project structure
+## How the code is organized
+
+- **Header** shows the name, job title, and location.
+- **Contact** contains email, phone, LinkedIn, and location.
+- **Skills** lists the main technologies and tools.
+- **About** gives a short summary of the person.
+- **Experience** lists work history.
+- **Education** lists training and education.
+
+## If you want to change the CV
+
+1. Edit the text in `index.html`.
+2. Change colors, spacing, and font settings in `styles.css`.
+3. Copy an existing section if you want to add a new one.
+
+## Beginner tip
+
+If you are unsure where to make a change, ask this simple question: "Is this content or appearance?" If it is content, edit `index.html`. If it is appearance, edit `styles.css`.
+
+## Files
 
 ```
-index.html      # All CV sections: Header, About, Skills, Experience, Education, Contact
-styles.css      # All styles — CSS custom properties for colors, fonts, and layout
-CONTEXT.md      # Domain model and design decisions
-README.md       # This file
+index.html  # CV content and sections
+styles.css  # Design, layout, and colors
+CONTEXT.md  # Extra notes about the project
+README.md   # This guide
 ```
-
-## Tech stack
-
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Semantic markup and document structure |
-| CSS3 | Layout (CSS Grid/Flexbox), custom properties, responsive design |
-
-No JavaScript, no frameworks, no build tools — intentionally minimal for fast loading and easy maintenance.
-
-## Sections
-
-- **Header** — Name, title, location, and logo mark
-- **Contact** — Email, phone, LinkedIn, location
-- **Skills** — Languages & Markup, Frameworks & Runtimes, AI & Agentic, Tools
-- **About** — Professional summary
-- **Experience** — Work history with roles, companies, and descriptions
-- **Education** — Academic and professional training
-
-## Customising
-
-1. Update personal details and content in `index.html`
-2. Adjust colors, fonts, and spacing via CSS custom properties at the top of `styles.css`
-3. Add or remove sections by copying an existing section block in `index.html`
 
 ## Browser support
 
-Targets all modern browsers (Chrome, Firefox, Safari, Edge). No polyfills needed.
-
-## License
-
-Personal project — not licensed for redistribution.
+The page is designed to work in modern browsers like Chrome, Firefox, Safari, and Edge.
