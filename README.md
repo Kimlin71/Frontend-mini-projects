@@ -1,60 +1,66 @@
-# FE-project-my-Cv
+# Frontend CV — Kim Lindberg
 
-This is a simple personal CV website. It uses only HTML and CSS, so it is easy to open, read, and edit even if you are new to web development.
+A personal CV/resume website built with plain HTML and CSS. This project is a training exercise completed as part of a 9-month Applied AI & Agentic Systems studies programme.
 
-## What this project is
+## Purpose
 
-- `index.html` contains the words and structure on the page.
-- `styles.css` controls how the page looks.
-- There is no framework, no JavaScript, and no build step.
+This repository is a hands-on learning project. Its goals are to practice:
 
-## How to view it
+- Structuring semantic HTML
+- Styling with plain CSS and custom properties
+- Deploying a static site via GitHub Pages
 
-Open `index.html` in your browser. If you want to run it like a small local website, use a static server such as:
+## Tech stack
+
+| Layer | Choice |
+|-------|--------|
+| Markup | Plain HTML (`index.html`) |
+| Styles | Plain CSS (`styles.css`) |
+| Build | None — no framework, no bundler, no JavaScript |
+
+## Getting started
+
+Clone the repo and open `index.html` directly in a browser, or spin up a local static server:
 
 ```bash
 npx serve .
 ```
 
-## Deploy to GitHub Pages
+## Project structure
 
-This project is ready to deploy as a static site on GitHub Pages.
+```
+index.html  # CV content and sections (Header, About, Skills, Experience, Education, Contact)
+styles.css  # Design, layout, colors, and CSS custom properties
+CONTEXT.md  # Domain glossary and project notes
+README.md   # This file
+```
+
+## Sections
+
+| Section | Contents |
+|---------|----------|
+| Header | Name, job title, and location |
+| About | Short professional summary |
+| Skills | Skill categories and skill tags |
+| Experience | Work history (roles) |
+| Education | Degrees, courses, and certificates |
+| Contact | Email, phone, LinkedIn, and GitHub |
+
+## Customising the CV
+
+1. Edit text and structure in `index.html`.
+2. Adjust colors, spacing, and typography in `styles.css` — look for the CSS custom properties at the top of the file.
+3. Duplicate an existing `<section>` block to add a new section.
+
+> **Tip:** Ask "Is this content or appearance?" — content lives in `index.html`, appearance in `styles.css`.
+
+## Deploying to GitHub Pages
 
 1. Push the repository to GitHub.
-2. In the GitHub repo, open `Settings` → `Pages`.
-3. Set the source to `GitHub Actions`.
-4. Push to `main` to trigger the deployment workflow in `.github/workflows/deploy.yml`.
-
-After the workflow finishes, GitHub will show the public Pages URL in the repository settings.
-
-## How the code is organized
-
-- **Header** shows the name, job title, and location.
-- **Contact** contains email, phone, LinkedIn, and location.
-- **Skills** lists the main technologies and tools.
-- **About** gives a short summary of the person.
-- **Experience** lists work history.
-- **Education** lists training and education.
-
-## If you want to change the CV
-
-1. Edit the text in `index.html`.
-2. Change colors, spacing, and font settings in `styles.css`.
-3. Copy an existing section if you want to add a new one.
-
-## Beginner tip
-
-If you are unsure where to make a change, ask this simple question: "Is this content or appearance?" If it is content, edit `index.html`. If it is appearance, edit `styles.css`.
-
-## Files
-
-```
-index.html  # CV content and sections
-styles.css  # Design, layout, and colors
-CONTEXT.md  # Extra notes about the project
-README.md   # This guide
-```
+2. Go to **Settings → Pages** and set the source to **GitHub Actions**.
+3. Push to `main` — the workflow in `.github/workflows/deploy.yml` will build and publish the site.
+4. GitHub will display the live URL in the Pages settings once the workflow completes.
 
 ## Browser support
 
-The page is designed to work in modern browsers like Chrome, Firefox, Safari, and Edge.
+Designed for modern evergreen browsers: Chrome, Firefox, Safari, and Edge.
